@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Melissa" content="this webpage about me" />
+    <meta name="author" content="Melissa Murillo" />
+    <meta name="keywords" content="webdev,css,html,javascript" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=450px, initial-scale=1.0" />
+    <meta name="description" content="HTML test webpage" />
+
+    <!--CSS-->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100%;
+        overflow-x: hidden;
+      }
+      #page {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+      }
+      header {
+        width: 100vw;
+        height: 10vh;
+        margin-bottom: 20px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+      nav li {
+        float: left;
+        margin: 20px;
+        text-decoration: none;
+      }
+      .logo {
+        float: right;
+        margin: 20px;
+      }
+      .logo img {
+        width: 30px;
+        height: 30px;
+      }
+      /*--------Section-------------*/
+      #top {
+        width: 100vw;
+        height: 100vh;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #top p {
+        margin: 20px 100px 20px 100px;
+      }
+      #top h1,
+      #top h5 {
+        margin: 10px;
+      }
+      /*--------Section-------------*/
+
+      #middle {
+        width: 100vw;
+        height: 100vh;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #middle p,
+      #middle h1,
+      #middle h5 {
+        margin: 10px;
+      }
+      /*--------Section-------------*/
+
+      #bottom {
+        width: 100vw;
+        height: 100vh;
+        background-color: #ddd;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #bottom p,
+      #bottom h1,
+      #bottom h5 {
+        margin: 10px;
+        color: #000;
+      }
+
+      footer {
+        width: 100vw;
+        height: 5vh;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+      }
+    </style>
+
+    <title>First lesson</title>
+  </head>
+  <body>
+    <!--------------------------------------------------------------->
+    <!---------------------------------Header----------------------------->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="https://img.icons8.com/ios/50/000000/google-logo.png" />
+        </div>
+        <ul>
+          <li><a href="about.html">Home</a></li>
+          <li>Portfolio</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <!----------------------------------Header-------------------------->
+
+    <div id="page">
+      <section id="top">
+        <h1>Hello World</h1>
+        <h5>First Paragraph</h5>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+          ratione nemo, laudantium adipisci quo autem qui quidem totam corporis.
+          Beatae! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Officia ratione nemo, laudantium adipisci quo autem qui quidem totam
+          corporis. Beatae! Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Officia ratione nemo, laudantium adipisci quo autem qui quidem
+          totam corporis. Beatae!
+        </p>
+
+        <a
+          href="https://code.visualstudio.com/docs/?dv=linux64_deb"
+          target="_blank"
+          title="Google"
+          >LINK</a
+        >
+
+        <a
+          href="https://code.visualstudio.com/docs/?dv=linux64_deb"
+          target="_blank"
+          ><img
+            src="IMG/Cahun.jpg"
+            width="500"
+            height="300"
+            alt="image tree"
+            title="melo"
+            name="flower"
+            id="3"
+            class="img"
+            style="border: 1px dotted #000; padding: 20px; margin: 20px; text-align: center;"
+        /></a>
+      </section>
+      <!------------------SECTION MIDDLE------------------------>
+      <!------------------SECTION MIDDLE------------------------>
+      <section id="middle">
+        <h1>Html Text Formatting</h1>
+
+        <div class="container">
+          <h3>Defines bold text</h3>
+          <b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </b>
+          <hr />
+          <h3>Defines emphasized text</h3>
+          <em>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </em>
+
+          <hr />
+          <h3>Defines italic text</h3>
+          <i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </i>
+          <hr />
+          <h3>Defines smaller text</h3>
+          <small>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </small>
+
+          <hr />
+          <h3>Defines important text</h3>
+          <strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </strong>
+
+          <hr />
+          <h3>Defines subscripted text</h3>
+          <sub>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </sub>
+
+          <hr />
+          <h3>Defines superscripted text</h3>
+          <sup>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </sup>
+
+          <hr />
+          <h3>Defines marked/highlighted text</h3>
+          <mark>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </mark>
+
+          <hr />
+          <h3>Defines deleted text</h3>
+          <del>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+            dignissimos laboriosam minus suscipit natus eaque ipsam fugit fugiat
+            molestias.
+          </del>
+        </div>
+      </section>
+
+      <!------------------SECTION BOTTOM------------------------>
+      <!------------------SECTION BOTTOM------------------------>
+      <section id="bottom">
+        <table
+          width="500"
+          style="border: 1px dotted  #000; padding: 20px; margin: 40px; text-align: center; "
+        >
+          <caption
+            style=" padding: 20px; margin: 10px; text-align: center; font-style: italic; "
+          >
+            Users Data
+          </caption>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Ali</td>
+            <td>22</td>
+          </tr>
+          <tr id="down">
+            <td>Olga</td>
+            <td>34</td>
+          </tr>
+        </table>
+
+        <p>
+          You can only have one TH : that stands for Table head, this will be
+          positioned at the top. You need a TH for each new TD created
+        </p>
+        <!----------------------------------tables--------------------------->
+
+        <!----------------------------------LISTS-------------------------->
+        <h1>Shopping List</h1>
+
+        <ul>
+          <li style="color: seagreen; font-size: 20px;">Unordered list</li>
+          <li>Milk</li>
+          <li>Eggs</li>
+          <li>Bread</li>
+        </ul>
+
+        <ol type="I">
+          <li style="color: red; font-size: 20px;">Unordered list</li>
+          <li>Eat</li>
+          <li>Sleep</li>
+          <li>Repeat</li>
+        </ol>
+
+        <!----------------------------------LISTS-------------------------->
+      </section>
+
+      <footer>
+        Footer
+      </footer>
+    </div>
+  </body>
+</html>
