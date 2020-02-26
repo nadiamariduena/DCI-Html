@@ -94,18 +94,34 @@
         justify-content: center;
         align-items: center;
       }
+
+      .listas {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
       #bottom p,
-      #bottom h1,
       #bottom h5 {
         margin: 10px;
+        color: #000;
+      }
+      #bottom h1 {
+        margin: 30px 0 10px 0;
         color: #000;
       }
 
       footer {
         width: 100vw;
-        height: 5vh;
+        height: 10vh;
         background-color: black;
         color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
       }
     </style>
@@ -118,7 +134,9 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="https://img.icons8.com/ios/50/000000/google-logo.png" />
+          <a href="index2.html"
+            ><img src="https://img.icons8.com/ios/50/000000/google-logo.png"
+          /></a>
         </div>
         <ul>
           <li><a href="about.html">Home</a></li>
@@ -273,24 +291,24 @@
           positioned at the top. You need a TH for each new TD created
         </p>
         <!----------------------------------tables--------------------------->
-
-        <!----------------------------------LISTS-------------------------->
         <h1>Shopping List</h1>
+        <div class="listas">
+          <!----------------------------------LISTS-------------------------->
 
-        <ul>
-          <li style="color: seagreen; font-size: 20px;">Unordered list</li>
-          <li>Milk</li>
-          <li>Eggs</li>
-          <li>Bread</li>
-        </ul>
+          <ul>
+            <li style="color: seagreen; font-size: 20px;">ordered list</li>
+            <li>Milk</li>
+            <li>Eggs</li>
+            <li>Bread</li>
+          </ul>
 
-        <ol type="I">
-          <li style="color: red; font-size: 20px;">Unordered list</li>
-          <li>Eat</li>
-          <li>Sleep</li>
-          <li>Repeat</li>
-        </ol>
-
+          <ol type="I">
+            <li style="color: red; font-size: 20px;">Unordered list</li>
+            <li>Eat</li>
+            <li>Sleep</li>
+            <li>Repeat</li>
+          </ol>
+        </div>
         <!----------------------------------LISTS-------------------------->
       </section>
 

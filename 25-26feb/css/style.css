@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-image: url(../img/Danila-Tkachenko-2.jpg);
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*------------------------*/
+/*------------------------*/
+#top {
+  width: 100vw;
+  height: auto;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#top h1 {
+  font-size: 5em;
+  font-style: italic;
+  /*You have to include at least 4 fonts, so in the case it dont work with one 
+  it will work with another..like Arial*/
+  font-family: "Cutive Mono", monospace;
+  margin: 50px; /*because i want top right bottom and left*/
+}
+
+.top-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 0 100px 0;
+  border-top: 1px dotted #000;
+  /*
+You cant use the 4 rule in border, you can only
+use one pixel at the time
+
+*/
+  border-bottom: 1px dotted #000;
+}
+.top-content p {
+  width: 80%;
+  font-size: 2em;
+  color: #282828;
+  font-family: "Arimo";
+  margin: 50px; /*because i want top right bottom and left*/
+}
+.image-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-art {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  border: 20px red solid;
+}
+
+/*------------------------*/
+
+#middle {
+  width: 100vw;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-forms {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: darkorange;
+  margin: 10px 10px 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.baby-square {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 10px 10px 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baby-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.rectangle {
+  width: 200px;
+  height: 70px;
+  background-color: darkred;
+  margin: 10px 10px 40px 10px;
+}
+.baby-rectangle {
+  width: 150px;
+  height: 55px;
+  background-color: yellow;
+  background-image: url(../img/Alejandro-Chaskielberg-8.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*
+Its not recommended to use pixels due to the responsivity
+
+*/
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid red;
+}
+
+/*------------------------*/
+
+#bottom {
+  width: 100vw;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+  padding: 0 0 50px 0;
+
+  border-top: 10px dotted #fff;
+  border-bottom: 1px solid #000;
+}
+
+.bottom-content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.bottom-content p {
+  width: 80%;
+  font-size: 2em;
+  color: #fff;
+  font-family: "Arimo";
+  margin: 50px; /*because i want top right bottom and left*/
+}
+.image-box2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box2 img {
+  width: 500px;
+  height: 400px;
+  padding: 10px 10px 50px 10px;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+  border: 20px solid black;
+  box-shadow: 0px 10px 100px 20px greenyellow;
+}
+
+/*
+border-top: 3px red dashed;
+border-bottom: 3px yellow solid;
+
+*/
+
+#bottom a {
+  margin: 100px 0 50px 0;
+  padding: 17px 20px;
+  background-color: white;
+  color: #000;
+  font-size: 0.8em;
+  font-family: "Raleway-Thin", sans-serif;
+  transition: 0.5s ease-in-out;
+  border-radius: 100%;
+  border-style: solid;
+}
+#bottom a:hover {
+  background-color: black;
+  color: #fff;
+  transition: 0.5s ease-in;
+  border-color: darkgreen;
+}
+/*------------------------*/
+.text-box {
+  width: 80%;
+  height: 50%;
+
+  border: 1px #000 dotted;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-box p:nth-child(even) {
+  color: black;
+  font-weight: 600;
+  font-family: "BoldItalic";
+
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  padding: 20px;
+}
+.text-box p:nth-child(odd) {
+  color: yellow;
+  font-size: 4em;
+  font-weight: 600;
+  font-family: "BungeeHairline";
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 30px;
+  word-spacing: 35px;
+  padding: 50px;
+}
+/*------------------------*/
+/*Test only and last child*/
+/*------------------------*/
+/* span.move {
+  width: 40px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: magenta;
+  border: 2px #ccc dotted;
+} */
+
+.random-box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  /* background-color: magenta;
+  border: 2px #ccc dotted; */
+}
+.random-box p {
+  width: 90%;
+  font-family: "Lato";
+  font-size: 2em;
+  color: #000;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+span.random-color-box {
+  padding: 20px;
+
+  background-color: chartreuse;
+  font-family: "Rajdhani-SemiBold";
+  color: red;
+  font-size: 1em;
+  transition: 0.6s;
+  line-height: 50px;
+  background-image: url(../img/Alejandro-Chaskielberg-8.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+span.random-color-box:hover {
+  padding: 100px 50px 100px 50px;
+  color: red;
+  font-size: 2em;
+  transition: 0.6s;
+  line-height: 90px;
+  font-family: "Arimo";
+  background-color: rgb(73, 32, 255);
+  background-image: url(../img/Photo-Vogue-Festival-2019-metalmagazine-7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
