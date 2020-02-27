@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About</title>
+
+    <style>
+      *,
+      ::before,
+      *::after {
+        /* any element before the star, and any elemnet after this element
+*,
+::before,
+*::after */
+
+        /* the margin cero is in the case abother user have settings
+  and you dont want it to destroy your design */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        /* Borderbox will adapt the extra size of padding to the 100 
+  i put in the width */
+      }
+
+      body {
+        height: 100%;
+        overflow-x: hidden;
+        background-color: yellowgreen;
+      }
+
+      .hello-box {
+        width: 100vw;
+        height: 100vh;
+        background-color: blueviolet;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hello-box img {
+        width: 450px;
+        height: 320px;
+        box-shadow: 20px 0px 100px 20px red;
+        background-color: aqua;
+        border: 10px solid #000;
+        transition: 0.6s;
+      }
+      .hello-box img:hover {
+        width: 500px;
+        height: 320px;
+        transition: 0.6s;
+        box-shadow: 0px 0px 100px 50px yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ABOUT</h1>
+    <a href="../index.html">Go back home</a>
+
+    <div class="hello-box">
+      <img
+        src="../img/Photo-Vogue-Festival-2019-metalmagazine-7.jpg"
+        alt="image"
+        width="300"
+        height="300"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *,
+      ::before,
+      *::after {
+        /* any element before the star, and any elemnet after this element
+  *,
+  ::before,
+  *::after */
+
+        /* the margin cero is in the case abother user have settings
+    and you dont want it to destroy your design */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        /* Borderbox will adapt the extra size of padding to the 100 
+    i put in the width */
+      }
+
+      body {
+        height: 100%;
+        overflow-x: hidden;
+        background-color: yellowgreen;
+      }
+
+      #positions {
+        width: 100vw;
+        height: 100vh;
+        background-color: blueviolet;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pos-relative {
+        width: 600px;
+        height: 600px;
+        background-color: yellow;
+        position: relative;
+      }
+      .pos-absolute1 {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        position: absolute;
+        left: 60%;
+        top: 55%;
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+      .pos-absolute2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(0, 255, 0, 0.6);
+        position: absolute;
+        left: 35%;
+        top: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="positions">
+      <div class="pos-relative"></div>
+      <div class="pos-absolute1">
+        <h1>I am the first box connected to the mother</h1>
+      </div>
+      <div class="pos-absolute2">
+        <h1>I am the second box connected to the mother</h1>
+      </div>
+    </div>
+  </body>
+</html>

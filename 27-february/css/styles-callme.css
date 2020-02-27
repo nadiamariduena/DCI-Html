@@ -1,0 +1,90 @@
+*,
+::before,
+*::after {
+  /* any element before the star, and any elemnet after this element
+*,
+::before,
+*::after */
+
+  /* the margin cero is in the case abother user have settings
+  and you dont want it to destroy your design */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Borderbox will adapt the extra size of padding to the 100 
+  i put in the width */
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f3f3f3;
+}
+
+#page {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+}
+
+/* --------------------------- */
+
+/* ----------sections---------- */
+#top {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#middle {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 60px 0px;
+  border-top: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+}
+
+#middle h3 {
+  margin: 50px 0 20px 0;
+  font-size: 1.6em;
+  font-family: "BungeeHairline";
+}
+
+.middle-text-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 50px 0 40px;
+}
+.middle-text-content h5 {
+  margin: 0px 0 20px 0;
+  font-size: 1.2em;
+  font-family: "BoldItalic";
+}
+.middle-text-content p:nth-of-type(2) {
+  width: 100%;
+  margin: 20px 0;
+  text-align: right;
+  font-family: "Raleway-Thin", sans-serif;
+  color: #282828;
+}
+.middle-text-content p {
+  width: 100%;
+  margin: 20px 0;
+  text-align: left;
+  font-family: "Raleway-Thin", sans-serif;
+  color: #666;
+}
