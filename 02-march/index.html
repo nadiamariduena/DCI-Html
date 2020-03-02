@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>monday 02 march</title>
+    <!-- <link rel="stylesheet" href="" /> -->
+
+    <style>
+      html {
+        background-color: rgb(117, 161, 144);
+        font-size: 16px;
+        margin: 0;
+      }
+
+      #random-text {
+        color: red;
+      }
+      .main-text {
+        color: blue;
+      }
+
+      .main-page {
+        background-color: #f3f3f3f3;
+      }
+
+      /* ATRIBUTES */
+      span,
+      div {
+        background-color: cyan;
+      }
+      div p {
+        color: fuchsia;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      div > p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: gray;
+      }
+
+      div + span {
+        color: yellow;
+        font-size: 3em;
+      }
+
+      span ~ p {
+        color: darkorange;
+      }
+      /* ATRIBUTES WITH VALUES */
+      [name] {
+        /* the type or name or read, is to manipulate the styles of a form */
+
+        background-color: rosybrown;
+      }
+      /* the type or name or read, is to manipulate the styles of a form */
+      [type="submit"] {
+        background-color: saddlebrown;
+      }
+
+      [alt~="sun"] {
+        width: 100px;
+        height: 100px;
+        border: 2px #ccc solid;
+      }
+
+      [alt^="tree"] {
+        border: 2px yellow solid;
+        border-radius: 50%;
+      }
+
+      [alt$="Bigtree"] {
+        padding: 5px;
+      }
+
+      /* 
+      careful with this 
+      
+      [class*="text"] {
+        color: violet;
+        font-size: 3em;
+        
+      }
+      two different
+      
+         div[class*="text"] {
+        color: violet;
+      }
+      
+      */
+      [class*="text"] {
+        font-size: 1rem;
+        color: violet;
+        width: 800px;
+        height: 200px;
+      }
+
+      [class*="text"]:hover {
+        background-color: olive;
+      }
+
+      a:visited {
+        color: darkgreen;
+        font-size: 2em;
+      }
+
+      input:focus {
+        outline: none;
+        border: 2px orange solid;
+        box-shadow: 3px 3px 3px red;
+      }
+
+      input[name=":firstName"] + span {
+        color: olive;
+      }
+
+      a:active {
+        background-color: plum;
+        border-radius: 30%;
+      }
+
+      input:checked {
+        width: 20px;
+        background-color: sandybrown;
+      }
+
+      /* cc3
+      div[class="text-main"]::after {
+
+      }
+
+      FOR CC2 you must to add both versions because if you put just one, it may not work in certain browsers
+      div[class="text-main"]:after {
+        
+      }
+
+*/
+      /* ::after  
+:after css2 and ::after is css3*/
+      div[class="text-main"]::after {
+        content: " Hadi";
+      }
+      /*  IE 
+ div[class="text-main"]:after {
+} */
+      div[class="text-main"]::before {
+        content: " Hello";
+      }
+      /* :target */
+      :target {
+        border: 3px black dashed;
+      }
+      /* :nth-child() */
+
+      /* ---------------------NTH */
+      /*    EVERY SECOND , the n is the difference in between this one tr:nth-child(2)
+
+tr:nth-child(2n) {
+        background-color: red;
+      }
+      tr:nth-child(3n) {
+        background-color: greenyellow;
+      } 
+      
+      here is say. starting from line 1 ...+ 1
+      tr:nth-child(2n + 1) 
+      
+      
+      */
+      tr:nth-child(2n) {
+        background-color: red;
+      }
+      tr:nth-child(3n) {
+        background-color: greenyellow;
+      }
+      td,
+      th {
+        border: 2px solid fuchsia;
+      }
+    </style>
+  </head>
+  <!-- --------------------- -->
+  <body class="main-page">
+    <!-- content -->
+    <div class="main-text" id="top">
+      <a href="../02-march/html/exercises.html" target="_blank">EXERCISES</a>
+
+      <p id="random-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quis
+        dolore. Fugiat quasi dolores tempora placeat ipsa at veritatis soluta!
+      </p>
+      <span> <p>gfgfgfgfg bfgg</p></span>
+      <p>ffefeff dfdfdf dfdf</p>
+    </div>
+    <span>
+      this is normal text, in span
+    </span>
+    <p>hdjdk djdkdk dsksks</p>
+    <p>hdhdh diudh khukeuhf kuhku</p>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+      </tr>
+      <tr>
+        <td>Ali</td>
+        <td>22</td>
+        <td>Berlin</td>
+      </tr>
+      <tr>
+        <td>Olga</td>
+        <td>43</td>
+        <td>Amsterdam</td>
+      </tr>
+      <tr>
+        <td>Hadi</td>
+        <td>30</td>
+        <td>Berlin</td>
+      </tr>
+      <tr>
+        <td>Zain</td>
+        <td>14</td>
+        <td>LA</td>
+      </tr>
+    </table>
+
+    <form action="index.js" method="GET">
+      <input
+        type="text"
+        name="firstName"
+        id="11"
+        placeholder="enter your name"
+        required
+      />
+
+      <span>*</span>
+      <input
+        type="text"
+        name="lastName"
+        id="12"
+        placeholder="enter your last Name"
+        required
+      />
+      <br />
+      <input type="email" name="work-email" id="" />
+      <img
+        src="./img/metalmagazine-mylespedlar11.jpg"
+        alt="tree and sun bigTree"
+      />
+      <br />
+      <input type="checkbox" name="news" id="news-letter" /> send me everyday a
+      lot of emails
+      <br />
+      <input type="submit" value="send" />
+      <input type="reset" value="clear" />
+    </form>
+    <div class="text">hdhsd hsdhdh hshs</div>
+    <br />
+    <div class="text-main">my name is</div>
+
+    <a href="https://www.google.com" target="_blank">click me 😇</a>
+    <a href="#top"> Go up 💪🏻</a>
+  </body>
+</html>
