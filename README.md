@@ -13,3 +13,11 @@ _Exercise 02 march 2020
 
 
 ![preview](https://imagizer.imageshack.com/img923/9802/8pfNU0.gif)
+
+
+_Exercise 04 march 2020
+* Tables, flex-box, vw and vh
+
+
+
+![preview](https://imagizer.imageshack.com/img923/9802/8pfNU0.gif)
