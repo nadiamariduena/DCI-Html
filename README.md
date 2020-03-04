@@ -20,4 +20,4 @@ _Exercise 04 march 2020
 
 
 
-![preview](https://imagizer.imageshack.com/img923/9802/8pfNU0.gif)
+![preview](http://imageshack.com/a/img921/2842/l5OxOe.jpg)
