@@ -20,7 +20,7 @@ _Exercise 04 march 2020
 
 
 
-![preview](https://imagizer.imageshack.com/v2/640x480q90/924/9pyfvf.jpg)
+![preview](https://imagizer.imageshack.com/v2/320x240q90/924/9pyfvf.jpg)
 
 _Exercise 05 march 2020
 * Birds exercise. 
