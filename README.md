@@ -21,3 +21,11 @@ _Exercise 04 march 2020
 
 
 ![preview](http://imageshack.com/a/img921/2842/l5OxOe.jpg)
+
+_Exercise 05 march 2020
+* Birds exercise. 
+* background image url, background position, background repeat, border-box-property. 
+
+
+
+![preview](https://imagizer.imageshack.com/img923/8789/yT43y2.gif)
