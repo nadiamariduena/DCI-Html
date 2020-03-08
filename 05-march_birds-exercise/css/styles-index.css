@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #eee;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#main-page {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffe2a0f3;
+}
+
+h1 {
+  position: fixed;
+}
+
+.main-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #ffe2a0f3;
+  background-image: url(../img/flyingbirds1.gif), url(../img/birds-transp.png);
+  background-repeat: no-repeat, repeat;
+  background-position: right top;
+  background-size: 50rem, 30rem;
+  transition: 3s;
+}
+
+.main-text:hover {
+  background-color: #fa0606f3;
+  background-image: url(../img/flyingbirds1.gif), url(../img/flying-birds3.gif);
+  transition: 5s;
+  background-repeat: no-repeat, repeat;
+  background-position: left bottom;
+  /* dont add left and left because one of the birds images will not do what you expect  */
+  background-size: 50rem, 50rem;
+}
+
+/* 
+ORIGINAL
+
+  the cover will make that the image cover the whole screen, due to that its impossible to animate#
+  when changing the settings inside the background-position, but it will
+  work if i reduce its size like for example from cover to 50 ram.
+
+.main-text {
+
+  background-color: aqua;
+  background-image: url(../img/flyingbirds1.gif), url(../img/birds-transp.png);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 20rem, cover;
+
+
+}
+.ex1 {
+  padding: 20px;
+  background-image: url(../image/bird.gif);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+
+
+
+
+*/
+
+#border-box-property {
+  width: 100vw;
+  height: 50vh;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #92ddff;
+  background-image: url(../img/barquito.gif);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20rem;
+  transition: 3s;
+}
+
+#border-box-property:hover {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 30rem;
+  transition: 3s;
+}
+
+.ex1 {
+  /*  just playing ****
+
+  position: fixed;
+  bottom: 20%;
+  left: 50%; */
+  padding: 50px; /*size of the green square*/
+  background-image: url(../img/flyingbirds1.gif);
+  background-size: 200px; /*How big the area of the birds will be, will make the 
+  birds grow depending of it*/
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-color: greenyellow;
+}
