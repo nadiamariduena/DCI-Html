@@ -11,15 +11,12 @@ html {
   overflow-x: hidden;
 }
 
-#main-page {
+#page {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #ffe2a0f3;
-}
 
-h1 {
-  position: fixed;
+  background-color: #ffe2a0f3;
 }
 
 .main-text {
@@ -29,7 +26,7 @@ h1 {
   width: 100vw;
   height: 100vh;
 
-  background-color: #ffe2a0f3;
+  background-color: #a2b4c5f3;
   background-image: url(../img/flyingbirds1.gif), url(../img/birds-transp.png);
   background-repeat: no-repeat, repeat;
   background-position: right top;
@@ -38,7 +35,8 @@ h1 {
 }
 
 .main-text:hover {
-  background-color: #fa0606f3;
+  background-color: #ffe2a0f3;
+
   background-image: url(../img/flyingbirds1.gif), url(../img/flying-birds3.gif);
   transition: 5s;
   background-repeat: no-repeat, repeat;
@@ -47,6 +45,9 @@ h1 {
   background-size: 50rem, 50rem;
 }
 
+.main-text h1 {
+  font-family: "Raleway-Light", sans-serif;
+}
 /* 
 ORIGINAL
 
@@ -113,5 +114,7 @@ ORIGINAL
   birds grow depending of it*/
   background-repeat: no-repeat;
   background-clip: border-box;
-  background-color: greenyellow;
+  background-color: transparent;
+  border: 1px dashed #000;
+  border-radius: 50%;
 }
