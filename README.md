@@ -29,3 +29,8 @@ _Exercise 05 march 2020
 
 
 ![preview](https://imagizer.imageshack.com/img923/8789/yT43y2.gif)
+
+_Exercise 10 march 2020
+
+* All about FLEX, order, justify-content, align-items etc. 
+
