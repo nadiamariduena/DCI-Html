@@ -34,3 +34,12 @@ _Exercise 10 march 2020
 
 * All about FLEX, order, justify-content, align-items etc. 
 
+
+![preview](https://imagizer.imageshack.com/img923/6855/KyEvy7.gif)
+
+_Exercise 11 march 2020
+* Birds exercise. 
+* background image url, background position, background repeat, border-box-property. 
+
+
+
