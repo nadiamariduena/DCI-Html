@@ -41,8 +41,6 @@ _Exercise 10 march 2020
 ![preview](https://imagizer.imageshack.com/img924/1906/HwxrH3.gif)
 
 
-_Exercise 11 march 2020
-* YOUTUBE exercise (its inside the website). 
  
 
 
