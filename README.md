@@ -36,7 +36,9 @@ _Exercise 10 march 2020
 
 
 
-![preview](https://imagizer.imageshack.com/img923/9802/8pfNU0.gif)
+
+
+![preview](https://imagizer.imageshack.com/img923/6855/KyEvy7.gif)
 
 
 _Exercise 11 march 2020
